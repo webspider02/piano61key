@@ -1,0 +1,5 @@
+div#wrapper > div#piano-card > div#piano-keyboard > div.white-key {
+    height:100%;
+    width: 0.9em;          /* 14.4px for 16 font-size */
+    border:1px solid purple;
+}

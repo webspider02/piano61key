@@ -1,4 +1,48 @@
+:root {
+    --bg-color-violet: #6F00FF;
+    --bg-color-cyan: #00FFFF; 
+    --header-color-white: white; 
+    --piano-color-black: #010B13;
+    --piano-border-color: #2A3439;
+}
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient( var(--bg-color-violet), var(--bg-color-cyan) );
+}
+
+div#wrapper {
+    text-align: center;
+}
+
+div#wrapper > h4 { 
+    color: var(--header-color-white);
+    font-family: 'Times New Roman', serif;
+}
+
 div#wrapper > div#piano-card {
-    background-color:black;
-    padding:20px;
+    background-color: var(--piano-color-black);
+    height: 95px;
+    width: 90%; 
+    height: 5em;
+    border:2px solid var(--piano-border-color);
+    margin: 6px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+div#wrapper > div#piano-card > div#options {
+    height:60%;
+    /* border: 1px solid blue; */
+}
+
+div#wrapper > div#piano-card > div#piano-keyboard {
+    border:1px solid red;
+    height: 40%;
 }

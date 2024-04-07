@@ -73,29 +73,93 @@ div#wrapper > div#piano-card > div#piano-keyboard > div.black-key {
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard > div#Bb1 {
-    left :4.7px;
+    left :4.6px;
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard > div#Db2 {
-    left :17.7px;
+    left :17.3px;
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard > div#Eb2 {
-    left :24.4px;
+    left :23.6px;
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard > div#Gb2 {
-    left :37.4px;
+    left :36.4px;
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard > div#Ab2 {
-    left :44.0px;
+    left :42.7px;
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard > div#Bb2 {
-    left :50.4px;
+    left :48.9px;
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard > div#Db3 {
-    left :63.5px;
+    left :61.7px;
+}
+
+div#wrapper > div#piano-card > div#piano-keyboard > div#Eb3 {
+    left :68.2px;
+}
+
+div#wrapper > div#piano-card > div#piano-keyboard > div#Gb3 {
+    left :80.8px;
+}
+
+div#wrapper > div#piano-card > div#piano-keyboard > div#Ab3 {
+    left :87.2px;
+}
+
+div#wrapper > div#piano-card > div#piano-keyboard > div#Bb3 {
+    left :93.6px;
+}
+
+div#wrapper > div#piano-card > div#piano-keyboard > div#Db4 {
+    left :109.1px;
+}
+
+div#wrapper > div#piano-card > div#piano-keyboard > div#Eb4 {
+    left :115.7px;
+}
+
+div#wrapper > div#piano-card > div#piano-keyboard > div#Gb4 {
+    left :128.7px;
+}
+
+div#wrapper > div#piano-card > div#piano-keyboard > div#Ab4 {
+    left :135.2px;
+}
+
+div#wrapper > div#piano-card > div#piano-keyboard > div#Bb4 {
+    left :141.8px;
+}
+
+div#wrapper > div#piano-card > div#piano-keyboard > div#Db5 {
+    left :154.7px;
+}
+
+div#wrapper > div#piano-card > div#piano-keyboard > div#Eb5 {
+    left :161.3px;
+}
+
+div#wrapper > div#piano-card > div#piano-keyboard > div#Gb5 {
+    left :174.4px;
+}
+
+div#wrapper > div#piano-card > div#piano-keyboard > div#Ab5 {
+    left :181.0px;
+}
+
+div#wrapper > div#piano-card > div#piano-keyboard > div#Bb5 {
+    left :187.4px;
+}
+
+div#wrapper > div#piano-card > div#piano-keyboard > div#Db6 {
+    left :200.5px;
+}
+
+div#wrapper > div#piano-card > div#piano-keyboard > div#Eb6 {
+    left :206.9px;
 }

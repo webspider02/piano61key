@@ -44,3 +44,6 @@ blackKeys[19].setAttribute("id","Ab5");
 blackKeys[20].setAttribute("id","Bb5");
 blackKeys[21].setAttribute("id","Db6");
 blackKeys[22].setAttribute("id","Eb6");
+blackKeys[23].setAttribute("id","Gb6");
+blackKeys[24].setAttribute("id","Ab6");
+blackKeys[25].setAttribute("id","Bb6");

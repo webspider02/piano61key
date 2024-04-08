@@ -47,3 +47,8 @@ blackKeys[22].setAttribute("id","Eb6");
 blackKeys[23].setAttribute("id","Gb6");
 blackKeys[24].setAttribute("id","Ab6");
 blackKeys[25].setAttribute("id","Bb6");
+
+// Labeling White keys
+
+whiteKeys[0].setAttribute("id","A1");
+

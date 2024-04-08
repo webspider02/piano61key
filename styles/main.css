@@ -5,6 +5,8 @@
     --piano-color-black: #010B13;
     --piano-border-color: #2A3439;
     --button-color: #C0C0C0;
+    --black-key-pressed:#DFFF00;
+    --white-key-pressed:#66FF00;
 }
 
 * {

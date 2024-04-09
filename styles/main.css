@@ -7,6 +7,7 @@
     --button-color: #C0C0C0;
     --black-key-pressed:#DFFF00;
     --white-key-pressed:#66FF00;
+    --white-key-animation-color: #50C878;
 }
 
 * {
@@ -191,9 +192,22 @@ div#wrapper > div#piano-card > div#piano-keyboard > div#Bb6 {
 
 /* White Keys Ids */
 /* div#wrapper > div#piano-card > div#piano-keyboard > div#A1 {
-    background-color:brown;
+    animation-name: whiteKeyPressed;
+    animation-duration: 1s;
 }
 
-div#wrapper > div#piano-card > div#piano-keyboard > div#B6 {
+div#wrapper > div#piano-card > div#piano-keyboard > div#C7 {
     background-color: #6F00FF;
 } */
+
+@keyframes whiteKeyAnimation {
+    0%, 100% {
+        background-color: white;
+        filter: brightness(1);
+    }
+
+    50% {
+        background-color: var(--white-key-animation-color);
+        filter: brightness(100%);
+    }
+}

@@ -49,31 +49,6 @@ blackKeys[24].setAttribute("id","Ab6");
 blackKeys[25].setAttribute("id","Bb6");
 
 // Labeling White keys
-
-// whiteKeys[0].setAttribute("id","A1");
-// whiteKeys[1].setAttribute("id","B1");
-// whiteKeys[2].setAttribute("id","C2");
-// whiteKeys[3].setAttribute("id","D2");
-// whiteKeys[4].setAttribute("id","E2");
-// whiteKeys[5].setAttribute("id","F2");
-// whiteKeys[6].setAttribute("id","G2");
-whiteKeys[36].setAttribute("id","C7");
-
-// const notes = ["A","B","C","D","E","F","G"];
-// let whiteKeyId, noteNum;
-
-// for(let k=0; k<=36; k++) {
-//     noteNum = k;
-
-//     if(notes[k] == "C") {
-//         noteNum += 1;
-//     } 
-
-//     whiteKeyId = notes[noteNum] + (noteNum+1);
-
-//     whiteKeys[k].setAttribute("id",whiteKeyId);
-// }
-
 const notes = ["A", "B", "C", "D", "E", "F", "G"];
 let whiteKeyId, noteNum, octave;
 
@@ -91,3 +66,16 @@ for (let k = 0; k < 37; k++) {
 }
 
 whiteKeys[37].setAttribute("id","C7");
+
+// White key animation
+document.getElementById("wrapper").querySelector("#piano-card #piano-keyboard #A1").addEventListener("keydown", whiteKeyPressed );
+
+function whiteKeyPressed(event) {
+    let key = event.key;
+    console.log("key is pressed")
+
+    if(key == "a") {
+        document.getElementById("wrapper").querySelector("#piano-card #piano-keyboard #A1").style.animation = "whiteKeyAnimation 1s";
+        console.log("Key a is pressed");
+    }
+}

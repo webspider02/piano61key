@@ -67,15 +67,57 @@ for (let k = 0; k < 37; k++) {
 
 whiteKeys[37].setAttribute("id","C7");
 
-// White key animation
-document.getElementById("wrapper").querySelector("#piano-card #piano-keyboard #A1").addEventListener("keydown", whiteKeyPressed );
+/* White key animation
+   A1 path             */
 
-function whiteKeyPressed(event) {
-    let key = event.key;
-    console.log("key is pressed")
+// let a1 = document.querySelector("div#wrapper > div#piano-card > div#piano-keyboard > div#A1");
+// let a1s = document.querySelector("div#wrapper > div#piano-card > div#piano-options > audio#a1s"); // a1 sound path
 
-    if(key == "a") {
-        document.getElementById("wrapper").querySelector("#piano-card #piano-keyboard #A1").style.animation = "whiteKeyAnimation 1s";
-        console.log("Key a is pressed");
+// document.addEventListener("keydown", function(event) {
+//     if (event.key === "1") {
+//         animateWhiteKey(a1);
+//         console.log("Key 1 pressed");
+//     }
+// });
+   
+// a1.addEventListener("click", function() {
+//     animateWhiteKey(a1);
+//     console.log("Mouse clicked");
+// });
+   
+// function animateWhiteKey(element) {
+//     a1s.play();
+//     element.style.animation = "whiteKeyAnimation 1s";
+//     element.addEventListener("animationend", function() {
+//     // Reset the animation after it ends
+//     element.style.animation = "";
+//     });
+// }
+
+let a1 = document.querySelector("#A1");
+let a1s = document.querySelector("#a1s");
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "1") {
+        playAudioAndAnimate(a1, a1s);
+        console.log("Key 1 pressed");
     }
+});
+
+a1.addEventListener("click", function() {
+    playAudioAndAnimate(a1, a1s);
+    console.log("Mouse clicked");
+});
+
+function playAudioAndAnimate(element, audio) {
+    audio.play();
+    animateWhiteKey(element);
+}
+
+function animateWhiteKey(element) {
+    element.style.animation = "whiteKeyAnimation 1s";
+    element.addEventListener("animationend", function() {
+        // Reset the animation after it ends
+        element.style.animation = "";
+    });
 }

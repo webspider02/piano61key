@@ -208,6 +208,6 @@ div#wrapper > div#piano-card > div#piano-keyboard > div#C7 {
 
     50% {
         background-color: var(--white-key-animation-color);
-        filter: brightness(100%);
+        filter: brightness(200%);
     }
 }

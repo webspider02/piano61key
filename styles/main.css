@@ -46,7 +46,7 @@ div#wrapper > div#piano-card > div#options {
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard {
-    border:0.1px solid red;
+    /* border:0.1px solid red; */
     height: 40%;
     display:flex;
     flex-direction:row;
@@ -64,6 +64,11 @@ div#wrapper > div#piano-card > div#piano-keyboard > div.white-key {
     color: var(--button-color);
 }
 
+div#wrapper > div#piano-card > div#piano-keyboard > div.white-key:hover {
+    opacity:0.5;
+}
+
+
 div#wrapper > div#piano-card > div#piano-keyboard > div.black-key {
     z-index: 2;
     width: 3.6px;
@@ -74,16 +79,21 @@ div#wrapper > div#piano-card > div#piano-keyboard > div.black-key {
     color: var(--button-color);
 }
 
+div#wrapper > div#piano-card > div#piano-keyboard > div.black-key:hover {
+    background-color:gray;
+}
+ 
+
 div#wrapper > div#piano-card > div#piano-keyboard > div#Bb1 {
-    left :4.6px;
+    left :4.5px;
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard > div#Db2 {
-    left :17.3px;
+    left :17.4px;
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard > div#Eb2 {
-    left :23.6px;
+    left :23.8px;
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard > div#Gb2 {
@@ -91,15 +101,15 @@ div#wrapper > div#piano-card > div#piano-keyboard > div#Gb2 {
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard > div#Ab2 {
-    left :42.7px;
+    left :42.8px;
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard > div#Bb2 {
-    left :48.9px;
+    left :49.2px;
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard > div#Db3 {
-    left :61.7px;
+    left :62.0px;
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard > div#Eb3 {
@@ -107,73 +117,83 @@ div#wrapper > div#piano-card > div#piano-keyboard > div#Eb3 {
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard > div#Gb3 {
-    left :80.8px;
+    left :81.0px;
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard > div#Ab3 {
-    left :87.2px;
+    left :87.4px;
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard > div#Bb3 {
-    left :93.6px;
+    left :93.7px;
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard > div#Db4 {
-    left :106.2px;
+    left :106.4px;
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard > div#Eb4 {
-    left :112.5px;
+    left :112.8px;
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard > div#Gb4 {
-    left :125.4px;
+    left :125.5px;
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard > div#Ab4 {
-    left :131.6px;
+    left :132.0px;
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard > div#Bb4 {
-    left :138.0px;
+    left :138.4px;
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard > div#Db5 {
-    left :150.7px;
+    left :151.0px;
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard > div#Eb5 {
-    left :156.9px;
+    left :157.3px;
 }
 
-div#wrapper > div#piano-card > div#piano-keyboard > div#Gb5 {
-    left :169.8px;
+div#wrapper > div#piano-card > div#piano-keyboard > div#Gb5 { /* i think here is the point :) */
+    left :170.1px;
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard > div#Ab5 {
-    left :176.2px;
+    left :176.3px;
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard > div#Bb5 {
-    left :182.5px;
+    left :182.7px;
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard > div#Db6 {
-    left :195.1px;
+    left :195.5px;
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard > div#Eb6 {
-    left :201.6px;
+    left :201.9px;
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard > div#Gb6 {
-    left :214.1px;
+    left :214.5px;
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard > div#Ab6 {
-    left :220.5px;
+    left :221.0px;
 }
 
 div#wrapper > div#piano-card > div#piano-keyboard > div#Bb6 {
-    left :226.9px;
+    left :227.3px;
 }
+
+
+/* White Keys Ids */
+/* div#wrapper > div#piano-card > div#piano-keyboard > div#A1 {
+    background-color:brown;
+}
+
+div#wrapper > div#piano-card > div#piano-keyboard > div#B6 {
+    background-color: #6F00FF;
+} */

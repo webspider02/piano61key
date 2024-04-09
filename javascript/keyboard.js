@@ -4,7 +4,7 @@ const whiteKeys = [];
 const path = document.querySelector("div#wrapper > div#piano-card > div#piano-keyboard"); 
 
 // Creating white keys
-for(let i=0; i<=36; i++) {
+for(let i=0; i<=37; i++) {
     key = document.createElement("div");
     key.classList.add("white-key");
     //key.classList.add("key");
@@ -50,5 +50,44 @@ blackKeys[25].setAttribute("id","Bb6");
 
 // Labeling White keys
 
-whiteKeys[0].setAttribute("id","A1");
+// whiteKeys[0].setAttribute("id","A1");
+// whiteKeys[1].setAttribute("id","B1");
+// whiteKeys[2].setAttribute("id","C2");
+// whiteKeys[3].setAttribute("id","D2");
+// whiteKeys[4].setAttribute("id","E2");
+// whiteKeys[5].setAttribute("id","F2");
+// whiteKeys[6].setAttribute("id","G2");
+whiteKeys[36].setAttribute("id","C7");
 
+// const notes = ["A","B","C","D","E","F","G"];
+// let whiteKeyId, noteNum;
+
+// for(let k=0; k<=36; k++) {
+//     noteNum = k;
+
+//     if(notes[k] == "C") {
+//         noteNum += 1;
+//     } 
+
+//     whiteKeyId = notes[noteNum] + (noteNum+1);
+
+//     whiteKeys[k].setAttribute("id",whiteKeyId);
+// }
+
+const notes = ["A", "B", "C", "D", "E", "F", "G"];
+let whiteKeyId, noteNum, octave;
+
+for (let k = 0; k < 37; k++) {
+    noteNum = k % 7;  // Cycle through the notes array
+    octave = Math.floor(k / 7) + 1;  // Calculate the octave number
+
+    // If the octave is beyond 7, start again from octave 1
+    if (octave > 7) {
+        octave = 1;
+    }
+
+    whiteKeyId = notes[noteNum] + octave;
+    whiteKeys[k].setAttribute("id", whiteKeyId);
+}
+
+whiteKeys[37].setAttribute("id","C7");

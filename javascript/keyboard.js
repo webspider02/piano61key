@@ -67,32 +67,55 @@ for (let k = 0; k < 37; k++) {
 
 whiteKeys[37].setAttribute("id","C7");
 
-/* White key animation
-   A1 path             */
+/* Audio creation  */
 
-// let a1 = document.querySelector("div#wrapper > div#piano-card > div#piano-keyboard > div#A1");
-// let a1s = document.querySelector("div#wrapper > div#piano-card > div#piano-options > audio#a1s"); // a1 sound path
+let audioPath  = document.querySelector("div#wrapper > div#piano-card > div#options"); 
+const whiteSound = [
+    "piano-sounds/A1.mp3",
+    "piano-sounds/B1.mp3",
+    "piano-sounds/C2.mp3",
+    "piano-sounds/D2.mp3",
+    "piano-sounds/E2.mp3",
+    "piano-sounds/F2.mp3",
+    "piano-sounds/G2.mp3",
+    "piano-sounds/A2.mp3",
+    "piano-sounds/B2.mp3",
+    "piano-sounds/C3.mp3",
+    "piano-sounds/D3.mp3",
+    "piano-sounds/E3.mp3",
+    "piano-sounds/F3.mp3",
+    "piano-sounds/G3.mp3",
+    "piano-sounds/A3.mp3",
+    "piano-sounds/B3.mp3",
+    "piano-sounds/C4.mp3",
+    "piano-sounds/D4.mp3",
+    "piano-sounds/E4.mp3",
+    "piano-sounds/F4.mp3",
+    "piano-sounds/G4.mp3",
+    "piano-sounds/A4.mp3",
+    "piano-sounds/B4.mp3",
+    "piano-sounds/C5.mp3",
+    "piano-sounds/D5.mp3",
+    "piano-sounds/E5.mp3",
+    "piano-sounds/F5.mp3",
+    "piano-sounds/G5.mp3",
+    "piano-sounds/A5.mp3",
+    "piano-sounds/B5.mp3",
+    "piano-sounds/C6.mp3",
+    "piano-sounds/D6.mp3",
+    "piano-sounds/E6.mp3",
+    "piano-sounds/F6.mp3",
+    "piano-sounds/G6.mp3",
+    "piano-sounds/A6.mp3",
+    "piano-sounds/B6.mp3",
+    "piano-sounds/C7.mp3",
+];
 
-// document.addEventListener("keydown", function(event) {
-//     if (event.key === "1") {
-//         animateWhiteKey(a1);
-//         console.log("Key 1 pressed");
-//     }
-// });
-   
-// a1.addEventListener("click", function() {
-//     animateWhiteKey(a1);
-//     console.log("Mouse clicked");
-// });
-   
-// function animateWhiteKey(element) {
-//     a1s.play();
-//     element.style.animation = "whiteKeyAnimation 1s";
-//     element.addEventListener("animationend", function() {
-//     // Reset the animation after it ends
-//     element.style.animation = "";
-//     });
-// }
+for(let k=0; k<61; k++) {
+
+}
+
+// Animation and sound
 
 let a1 = document.querySelector("#A1");
 let a1s = document.querySelector("#a1s");

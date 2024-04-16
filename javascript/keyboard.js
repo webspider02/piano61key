@@ -111,11 +111,49 @@ const whiteSound = [
     "piano-sounds/C7.mp3",
 ];
 
-for(let k=0; k<61; k++) {
+const whiteKeyAudioId = [
+    "a1s",
+    "b1s",
+    "c2s",
+    "d2s",
+    "e2s",
+    "f2s",
+    "g2s",
+    "c3s",
+    "d3s",
+    "e3s",
+    "f3s",
+    "g3s",
+    "c4s",
+    "d4s",
+    "e4s",
+    "f4s",
+    "g4s",
+    "c5s",
+    "d5s",
+    "e5s",
+    "f5s",
+    "g5s",
+    "c6s",
+    "d6s",
+    "e6s",
+    "f6s",
+    "g6s",
+    "c7s",
+];
 
+const soundPath = document.querySelector("div#wrapper > div#piano-card > div#options");
+
+let a;
+
+for(let l=0; l<=37; l++) {
+    a = document.createElement("audio");
+    a.setAttribute("id", whiteKeyAudioId[l] );
+    a.setAttribute("src", whiteSound[l] );
+    soundPath.appendChild(a);
 }
 
-// Animation and sound
+// Animation and sound (for White keys)
 
 let a1 = document.querySelector("#A1");
 let a1s = document.querySelector("#a1s");
